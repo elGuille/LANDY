@@ -38,6 +38,13 @@ p{
 	font-weight: 300;
 }
 
+#submitButton {
+	padding: 15px 50px;
+	color: aliceblue;
+	background-color: #0DD9FF;
+	font-size: 22px;
+}
+
 button {
 	display: inline-block;
 	margin-bottom: 0;
