@@ -2,9 +2,8 @@
 <html>
 <head>
   <title>Vinter - </title>
-        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="https://d2kfjaekmjmy1l.cloudfront.net/base-vNBasjG6wmjqdLKZgI7xS9aDc.css" data-bundle="base" integrity="sha256-NBasjG6wmjqdLKZgI7xS9aDcXdo+kXdTot7oEuVwzNo&#x3D;" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://d2kfjaekmjmy1l.cloudfront.net/websites-vy0OTznrgJ1PxYDpVl0gRBHAG.css" data-bundle="websites" integrity="sha256-y0OTznrgJ1PxYDpVl0gRBHAGK4UIcQ3F6/cE4U3M7rc&#x3D;" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+        <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,119 +33,6 @@
 
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Raleway:400,100,200,300,500,600,700,800,900" rel="stylesheet" type="text/css">
-
-<style type="text/css">
-    #public-landing-page .container {
-      font-family: 'Roboto', sans-serif !important;
-    }
-    #public-landing-page.template-1 .hero,
-    #public-landing-page.template-2 .hero,
-    #public-landing-page.template-3 .hero,
-    #public-landing-page.template-4 .hero,
-    #public-landing-page.template-7 .hero,
-    #public-landing-page.template-8 .hero .graphic,
-    #public-landing-page.template-9 .bg-color,
-    #public-landing-page .store-badge-white-text,
-    #public-landing-page.template-1color .hero,
-    #public-landing-page.template-2color .hero {
-      background: #FC195C;
-    }
-    #public-landing-page.template-5 .hero h2,
-    #public-landing-page.template-6 .hero h1,
-    #public-landing-page.template-8 .hero,
-    #public-landing-page.template-9 .hero h2,
-    #public-landing-page .hero .btn,
-    #public-landing-page .navbar .btn,
-    #public-landing-page .navbar.invert-navbar a,
-    #public-landing-page footer a,
-    #public-landing-page .benefit-header {
-      color: #FC195C;
-    }
-    #public-landing-page .btn.btn-primary.btn-primary-invert,
-    #public-landing-page .navbar.invert-navbar .btn.btn-primary,
-    #public-landing-page .navbar .navbar-collapse.in .btn.btn-primary,
-    #public-landing-page .navbar .navbar-toggle .icon-bar,
-    #public-landing-page .download-text {
-      color: white;
-      background-color: #FC195C;
-    }
-
-
-    #public-landing-page.template-1 .hero,
-    #public-landing-page.template-2 .hero,
-    #public-landing-page.template-4 .hero {
-      overflow: hidden;
-    }
-    #public-landing-page .hero .blurred-cover {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 1px;
-      background-image: url('https://lh3.googleusercontent.com/ZtusOXQjWF1-AR9iUkcWeE-n6uN6TxXwUoE5ttWFyQeDepsiQNIA0k_39CItfAWTtejbIjFK5PXJID0sfe0GCdMh6VPvUQ');
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      -webkit-filter: blur(50px);
-      -moz-filter: blur(50px);
-      -o-filter: blur(50px);
-      -ms-filter: blur(50px);
-      filter: blur(50px);
-      margin: -60% -40% -40%;
-    }
-    #public-landing-page .hero .blurred-cover .darken {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 2px;
-      background: rgba(0,0,0,.3);
-    }
-	.iphoneframe{		
-		height:600px;
-	}
-	.iphone-frame {
-		position:absolute;
-		width:100%;
-		height:600px;
-	}
-	.iphone-frame img {
-		height: 100%;
-	}
-	.iphoneframe iframe {
-		height: 460px;
-		width: 81%;
-		margin-top: 74px;
-	}
-
-  @media screen and (max-width: 767px) {
-      #public-landing-page.template-9 .hero h1 {
-        background: #FC195C;
-      }
-	  
-	.iphone-frame {
-		position:absolute;
-		width:100%;
-		height:600px;
-	}
-	
-	.iphoneframe{		
-		height:600px;
-	}
-	.iphone-frame img {
-		height: 100%;
-	}
-	.iphoneframe iframe {
-		height: 230px;
-		width: 130px;
-		margin-top: 37px;
-	}
-
-  }
-
-</style>
 
 
 </head>
@@ -187,7 +73,7 @@
 						<div class="iphone-frame">
 						  <img src="assets/img/devices/iphone2.png" class="screenshot" alt="Screenshot of Vinter">
 						</div>
-						<iframe src="https://www.youtube.com/embed/IR3t5p-B0DE?rel=0&amp&autoplay=1&loop=1;controls=0&amp;showinfo=0modestbranding=0;vq=hd720" frameborder="0" allowfullscreen></iframe>
+						<div id="ytplayer"></div>
 					</div>				
 
 				</div>
@@ -256,8 +142,8 @@
 
 </div>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 </div>
   <script>
     window.skit = (function() {
@@ -293,8 +179,8 @@
       };
     })();
   </script>
-    <script src="https://d2kfjaekmjmy1l.cloudfront.net/base-v7FrgCOzRpT-p1xZi4-zMwvGR.js" data-bundle="base" integrity="sha256-7FrgCOzRpT+p1xZi4+zMwvGR48+Ukfb6aJqtC0pFGUI&#x3D;" crossorigin="anonymous"></script>
-    <script src="https://d2kfjaekmjmy1l.cloudfront.net/websites-vnnOdYzmWkWxqmQ8f1fdmP7Zi.js" data-bundle="websites" integrity="sha256-nnOdYzmWkWxqmQ8f1fdmP7ZiICEkHaZxiTkYRRLRSPA&#x3D;" crossorigin="anonymous"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/cookies.js"></script>
   <script>
     (function() {
         var netproxy = skit.load("skit.platform.netproxy:js");
@@ -318,4 +204,35 @@
       controller.recursiveReady();
     })();
   </script>
+  <script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer', {
+      height: '390',
+      width: '640',
+      videoId: 'IR3t5p-B0DE',
+	   playerVars : {
+          'modestbranding' : 1, // Only works as first parameter after video id
+		  'autoplay' : 1,
+		  'rel' : 0,
+		  'showinfo' : 0,
+		  'showsearch' : 0,
+		  'controls' : 0,
+		  'loop' : 1,
+		  'enablejsapi' : 1,
+		  'playlist': 'IR3t5p-B0DE'
+		},
+    });
+	
+  }
+  
+</script>  </script>
 </body>
