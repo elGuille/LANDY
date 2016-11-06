@@ -82,6 +82,11 @@
   #public-landing-page footer .launchkit-promo img {
     height: 17px;
   }
+@media screen and (max-width:1049px) {
+	#public-landing-page.full-screen.centered .hero .container {
+		max-width: 100%;
+	}
+}
 @media screen and (max-width: 767px) {
   #public-landing-page footer,
   #public-landing-page.full-screen footer {
