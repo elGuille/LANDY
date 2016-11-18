@@ -219,10 +219,19 @@
       height: '390',
       width: '640',
       videoId: 'IR3t5p-B0DE',
+	  events: {
+		onStateChange: 
+		function(e){
+			if (e.data === YT.PlayerState.ENDED) {
+				player.playVideo(); 
+			}
+		}
+	  },		
 	   playerVars : {
 		  'autoplay' : 1,
 		  'rel' : 0,
 		  'showinfo' : 0,
+		  modestbranding: 1,
 		  'showsearch' : 0,
 		  'controls' : 0,
 		  'loop' : 1,
